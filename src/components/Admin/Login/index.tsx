@@ -1,4 +1,4 @@
-import * as S from 'src/components/Login/index.style';
+import * as S from 'src/components/Admin/Login/index.style';
 
 const LoginComponents = () => {
   return (

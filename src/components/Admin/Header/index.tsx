@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import * as S from 'src/components/Header/index.style';
+import * as S from 'src/components/Admin/Header/index.style';
 
 const Header = ({...props}) => {
   const { title1, title2, title3 } = props

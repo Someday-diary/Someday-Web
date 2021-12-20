@@ -3,6 +3,9 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
+  html{
+    height: 100%;
+  }
   * {
     box-sizing: border-box;
   }
@@ -10,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     overflow-x: hidden;
+    height: 100%;
   }
   a {
     color: inherit;
@@ -27,6 +31,10 @@ const GlobalStyle = createGlobalStyle`
   }
   ul, li {
     list-style: none;
+  }
+
+  #__next {
+    height: 100%;
   }
 
   @media only screen and (max-width: 768px) {

@@ -6,4 +6,7 @@ export interface IColorPalette {
   inputPlaceholder: string;
   black: string;
   white: string;
+  shadow: string;
+  formBackground: string;
+  inputBorder: string;
 }

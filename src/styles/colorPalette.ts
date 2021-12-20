@@ -9,6 +9,6 @@ export const colorPalette: IColorPalette = {
   black: '#000000',
   white: '#FFFFFF',
   shadow: '#BFBFBF',
-  formBackground: '#F4F4F4',
+  formBackground: '#FAFAFA',
   inputBorder: '#DEE2E6',
 }

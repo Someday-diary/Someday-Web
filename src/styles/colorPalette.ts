@@ -8,7 +8,6 @@ export const colorPalette: IColorPalette = {
   inputPlaceholder: '#B3C1CF',
   black: '#000000',
   white: '#FFFFFF',
-  shadow: '#BFBFBF',
-  formBackground: '#FAFAFA',
+  shadow: 'rgba(178, 193, 207, 0.25)',
   inputBorder: '#DEE2E6',
 }

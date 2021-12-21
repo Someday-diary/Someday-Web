@@ -9,8 +9,8 @@ export const LoginBackground = styled.div`
   margin: auto;
   border-radius: 50px;
   text-align: center;
-  box-shadow: 5px 5px 4px 0px ${colorPalette.shadow};
-  background-color: ${colorPalette.formBackground};
+  box-shadow: 0px 0px 8px 10px ${colorPalette.shadow};
+  background-color: ${colorPalette.white};
 
   @media only screen and (max-height: 1000px) {
     top: 120px;

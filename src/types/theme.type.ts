@@ -8,4 +8,5 @@ export interface IColorPalette {
   white: string;
   shadow: string;
   inputBorder: string;
+  gray: string;
 }

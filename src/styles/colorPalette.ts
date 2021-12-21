@@ -10,4 +10,5 @@ export const colorPalette: IColorPalette = {
   white: '#FFFFFF',
   shadow: 'rgba(178, 193, 207, 0.25)',
   inputBorder: '#DEE2E6',
+  gray: '#D4D4D4',
 }

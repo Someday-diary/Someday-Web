@@ -9,4 +9,6 @@ export interface IColorPalette {
   shadow: string;
   inputBorder: string;
   gray: string;
+  csTitle: string;
+  csLine: string;
 }

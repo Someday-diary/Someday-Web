@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 import * as S from 'src/components/Admin/Header/index.style';
 
@@ -7,14 +7,20 @@ const Header = ({...props}) => {
 
   return (
     <S.HeaderContainer>
-      <S.HeaderItem style={title1}>
-        <Link href='/admin/notice'>공지사항</Link>
+      <S.HeaderItem color={title1} >
+        <Link href='/admin/notice' passHref={true}>
+          <a>공지사항</a>
+        </Link>
       </S.HeaderItem>
-      <S.HeaderItem style={title2}>
-        <Link href='/admin/notice'>CS문의</Link>
+      <S.HeaderItem color={title2}>
+        <Link href='/admin/cs'>
+          <a>CS문의</a>
+        </Link>
       </S.HeaderItem>
-      <S.HeaderItem style={title3}>
-        <Link href='/admin/notice'>서버로그</Link>
+      <S.HeaderItem color={title3}>
+        <Link href='/admin/serverLog'>
+          <a>서버로그</a>
+        </Link>
       </S.HeaderItem>
     </S.HeaderContainer>
   );

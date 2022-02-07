@@ -17,6 +17,6 @@ export const HeaderItem = styled.div`
   display: inline-block;
   border-radius: 8px;
   margin-left: 45px;
-  background-color: ${props => props.style ? colorPalette.green1 : colorPalette.white};
-  color: ${props => props.style ? colorPalette.green3 : colorPalette.black};
+  background-color: ${props => props.color ? colorPalette.green1 : colorPalette.white};
+  color: ${props => props.color ? colorPalette.green3 : colorPalette.black};
 `;

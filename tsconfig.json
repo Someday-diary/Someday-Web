@@ -17,6 +17,6 @@
     "baseUrl": ".",
     "rootDir": "."
   },
-  "include": ["next-env.d.ts", "**/*.ts", "src/pages/_document.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "src/pages/_document.tsx", "**/*.tsx", "src/components/ErrorBoundary/ErrorBoundary.js"],
   "exclude": ["node_modules"]
 }

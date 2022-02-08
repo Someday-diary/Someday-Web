@@ -11,4 +11,5 @@ export interface IColorPalette {
   gray: string;
   csTitle: string;
   csLine: string;
+  blueShadow: string;
 }

@@ -14,12 +14,6 @@ const CSList = () => {
       <CSItem id='7' title='힣' text='히히힣' />
       <CSItem id='8' title='헿' text='히히힣' />
       <CSItem id='9' title='헤헿' text='히히힣' />
-      <CSItem id='9' title='헤헿' text='히히힣' />
-      <CSItem id='9' title='헤헿' text='히히힣' />
-      <CSItem id='9' title='헤헿' text='히히힣' />
-      <CSItem id='9' title='헤헿' text='히히힣' />
-      <CSItem id='9' title='헤헿' text='히히힣' />
-      <CSItem id='9' title='헤헿' text='히히힣' />
     </S.Layout>
   );
 };

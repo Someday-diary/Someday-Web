@@ -16,14 +16,9 @@ const CSItem = ({ id, title, text }: ICSDetail) => {
     text: text
   }
 
-  useEffect(() => {
-    postDetail(data);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
   return (
     <Link href={`/admin/cs/${id}`} passHref>
-      <S.Container onClick={() => {console.log(data)}}>
+      <S.Container onClick={() => postDetail(data)}>
         <S.CSNumber>{id}</S.CSNumber>
         <S.CSTitle>{title}</S.CSTitle>
       </S.Container>

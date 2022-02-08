@@ -1,11 +1,30 @@
 import Link from 'next/link';
+import { useEffect } from 'react';
+import { useSetRecoilState } from 'recoil';
+
+import { ICSDetail } from 'src/types/CS';
+import { postDetailState } from 'src/store/post';
+
 import * as S from 'src/components/Admin/CSInquiry/CSItem/index.style';
 
-const CSItem = ({ num, title }: {num: string, title: string}) => {
+const CSItem = ({ id, title, text }: ICSDetail) => {
+  const postDetail = useSetRecoilState(postDetailState);
+
+  const data: ICSDetail = {
+    id: id,
+    title: title,
+    text: text
+  }
+
+  useEffect(() => {
+    postDetail(data);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <Link href={`/admin/cs/${num}`} passHref>
-      <S.Container>
-        <S.CSNumber>{num}</S.CSNumber>
+    <Link href={`/admin/cs/${id}`} passHref>
+      <S.Container onClick={() => {console.log(data)}}>
+        <S.CSNumber>{id}</S.CSNumber>
         <S.CSTitle>{title}</S.CSTitle>
       </S.Container>
     </Link>

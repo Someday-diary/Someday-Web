@@ -1,11 +1,14 @@
+import Link from 'next/link';
 import * as S from 'src/components/Admin/CSInquiry/CSItem/index.style';
 
-const CSItem = () => {
+const CSItem = ({ num, title }: {num: string, title: string}) => {
   return (
-    <S.Container>
-      <S.CSNumber>1</S.CSNumber>
-      <S.CSTitle>태그가 입력이 안돼요.</S.CSTitle>
-    </S.Container>
+    <Link href={`/admin/cs/${num}`} passHref>
+      <S.Container>
+        <S.CSNumber>{num}</S.CSNumber>
+        <S.CSTitle>{title}</S.CSTitle>
+      </S.Container>
+    </Link>
   );
 };
 

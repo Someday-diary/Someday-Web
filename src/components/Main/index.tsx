@@ -1,11 +1,9 @@
-import Image from 'next/image';
 import * as S from 'src/components/Main/index.style';
 
 const MainForm = () => {
   const ScrollPage = () => {
     const location = document.querySelector("#move")?.getBoundingClientRect().top;
     window.scrollTo({top: location, behavior:'smooth'});
-    console.log(location);
   }
 
   return (

@@ -14,8 +14,8 @@ const MainHeader = () => {
             <a>질문하기</a>
           </Link>
         </S.HeaderItem>
-        <S.HeaderItem onClick={() => {alert('아직 제작 중인 페이지입니다.')}}>
-          <Link href='/'>
+        <S.HeaderItem>
+          <Link href='/recruitment'>
             <a>채용</a>
           </Link>
         </S.HeaderItem>
@@ -24,7 +24,7 @@ const MainHeader = () => {
             <a>팀원소개</a>
           </Link>
         </S.HeaderItem>
-        <S.HeaderItem>
+        <S.HeaderItem onClick={() => {alert('아직 제작 중인 페이지입니다.')}}>
           <Link href='/'>
             <a>회사소개</a>
           </Link>

@@ -26,4 +26,8 @@ export const HeaderItem = styled.span`
   margin-left: 50px;
   font-family: AppleSDGothicMedium;
   font-size: 15px;
+
+  &:hover {
+    font-family: AppleSDGothicBold;
+  }
 `;

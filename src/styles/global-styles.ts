@@ -3,6 +3,20 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
+
+  @font-face {
+  font-family: Noto Sans;
+  src: url('/fonts/NotoSans-Regular.ttf') format('woff');
+  }
+  @font-face {
+    font-family: AppleSDGothicBold;
+    src: url('/fonts/AppleSDGothicNeoB.woff') format('woff');
+  }
+  @font-face {
+    font-family: AppleSDGothicMedium;
+    src: url('/fonts/AppleSDGothicNeoM.woff') format('woff');
+  }
+
   html{
     height: 100%;
   }

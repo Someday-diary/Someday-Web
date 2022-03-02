@@ -13,5 +13,7 @@ export const colorPalette: IColorPalette = {
   gray: '#D4D4D4',
   csTitle: '#19C29E',
   csLine: '#89D9C8',
-  blueShadow: 'rgba(151, 186, 255, 0.25)'
+  blueShadow: 'rgba(151, 186, 255, 0.25)',
+  mainHeaderLine: '#EFF2F6',
+  mainTitleBackground: '#F3F3F3',
 }

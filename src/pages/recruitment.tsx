@@ -5,7 +5,7 @@ import RecruitmentContainer from "src/components/Main/Recruitment";
 const Recruitment: NextPage = () => {
   return (
     <>
-      <MainHeader />
+      <MainHeader title2='a' />
       <RecruitmentContainer />
     </>
   );

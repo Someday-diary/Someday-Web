@@ -1,5 +1,7 @@
 import * as S from 'src/components/Main/Recruitment/List/index.style';
-import RecruitmentItem from '../Item';
+
+import RecruitmentItem from 'src/components/Main/Recruitment/Item/index';
+import jobGroup from "src/config/jobGroup.json";
 
 const RecruitmentList = () => {
   return (
@@ -11,14 +13,14 @@ const RecruitmentList = () => {
           <td id='third'>마감일자</td>
         </table>
       </S.ListTitle>
-      <RecruitmentItem jobGroup='Android Developer' deadline='상시채용'  />
-      <RecruitmentItem jobGroup='iOS Developer' deadline='지원불가' />
-      <RecruitmentItem jobGroup='Front-End Developer' deadline='상시채용' />
-      <RecruitmentItem jobGroup='Back-End Developer' deadline='상시채용' />
-      <RecruitmentItem jobGroup='UX/UI Designer' deadline='상시채용' />
-      <RecruitmentItem jobGroup='PM' deadline='상시채용' />
-      <RecruitmentItem jobGroup='QA/CS' deadline='상시채용' />
-      <RecruitmentItem jobGroup='PM' deadline='상시채용' />
+
+      {
+        jobGroup.jobGroup.map(
+          job => {
+            return <RecruitmentItem key={job.id} jobGroup={job.jobGroup} deadline={job.deadline} />;
+          }
+        )
+      }
     </>
   );
 };

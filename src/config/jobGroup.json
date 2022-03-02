@@ -1,0 +1,44 @@
+{
+  "jobGroup": [
+    {
+      "id": "1",
+      "jobGroup": "Android Developer",
+      "deadline": "상시채용"
+    },
+    {
+      "id": "2",
+      "jobGroup": "iOS Developer",
+      "deadline": "지원불가"
+    },
+    {
+      "id": "3",
+      "jobGroup": "Front-End Developer",
+      "deadline": "상시채용"
+    },
+    {
+      "id": "4",
+      "jobGroup": "Back-End Developer",
+      "deadline": "상시채용"
+    },
+    {
+      "id": "5",
+      "jobGroup": "UX/UI Designer",
+      "deadline": "상시채용"
+    },
+    {
+      "id": "6",
+      "jobGroup": "PM",
+      "deadline": "상시채용"
+    },
+    {
+      "id": "7",
+      "jobGroup": "QA/CS",
+      "deadline": "상시채용"
+    },
+    {
+      "id": "8",
+      "jobGroup": "PM",
+      "deadline": "상시채용"
+    }
+  ]
+}

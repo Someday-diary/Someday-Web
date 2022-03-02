@@ -1,9 +1,6 @@
-import { useEffect } from 'react';
 import * as S from 'src/components/Main/Recruitment/Item/index.style';
 
-const RecruitmentItem = (props: any) => {
-  const { jobGroup, deadline } = props;
-
+const RecruitmentItem = ({ jobGroup, deadline }: { jobGroup: string, deadline: string }) => {
   return (
     <S.Layout>
       <table>

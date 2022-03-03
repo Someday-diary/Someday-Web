@@ -103,6 +103,10 @@ export const SubmitButton = styled.button`
   background-color: #33CC99;
   font-family: Pretendard600;
   font-size: 14px;
+
+  :hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
 `;
 
 export const QuestionButton = styled.div`
@@ -115,6 +119,11 @@ export const QuestionButton = styled.div`
   background-color: #D6F5EB;
   font-family: Pretendard600;
   font-size: 14px;
+
+  :hover {
+    background-color: #6FDCB9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
 `;
 
 export const Bottom = styled.div`

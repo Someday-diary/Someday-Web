@@ -1,7 +1,7 @@
 import * as S from 'src/components/Main/Recruitment/List/index.style';
 
-import RecruitmentItem from 'src/components/Main/Recruitment/Item/index';
 import jobGroup from "src/config/jobGroup.json";
+import RecruitmentItem from 'src/components/Main/Recruitment/Item/index';
 
 const RecruitmentList = () => {
   return (
@@ -17,7 +17,12 @@ const RecruitmentList = () => {
       {
         jobGroup.jobGroup.map(
           job => {
-            return <RecruitmentItem key={job.id} jobGroup={job.jobGroup} deadline={job.deadline} />;
+            return <RecruitmentItem 
+              key={job.id} 
+              id={job.id} 
+              jobGroup={job.jobGroup} 
+              deadline={job.deadline} 
+            />;
           }
         )
       }

@@ -7,6 +7,11 @@ export interface IColorPalette {
   black: string;
   white: string;
   shadow: string;
-  formBackground: string;
   inputBorder: string;
+  gray: string;
+  csTitle: string;
+  csLine: string;
+  blueShadow: string;
+  mainHeaderLine: string;
+  mainTitleBackground: string;
 }

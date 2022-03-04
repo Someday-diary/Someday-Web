@@ -3,6 +3,56 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
+
+  @font-face {
+  font-family: Noto Sans;
+  src: url('/fonts/NotoSans-Regular.ttf') format('woff');
+  }
+  @font-face {
+    font-family: AppleSDGothicBold;
+    src: url('/fonts/AppleSDGothicNeoB.woff') format('woff');
+  }
+  @font-face {
+    font-family: AppleSDGothicMedium;
+    src: url('/fonts/AppleSDGothicNeoM.woff') format('woff');
+  }
+  @font-face {
+    font-family: Pretendard100;
+    src: url('/fonts/Pretendard-Thin.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: Pretendard200;
+    src: url('/fonts/Pretendard-ExtraLight.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: Pretendard300;
+    src: url('/fonts/Pretendard-Light.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: Pretendard400;
+    src: url('/fonts/Pretendard-Regular.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: Pretendard500;
+    src: url('/fonts/Pretendard-Medium.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: Pretendard600;
+    src: url('/fonts/Pretendard-SemiBold.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: Pretendard700;
+    src: url('/fonts/Pretendard-Bold.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: Pretendard800;
+    src: url('/fonts/Pretendard-ExtraBold.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: Pretendard900;
+    src: url('/fonts/Pretendard-Black.woff2') format('woff2');
+  }
+
   html{
     height: 100%;
   }
@@ -10,10 +60,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Noto Sans, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     overflow-x: hidden;
-    height: 100%;
+    min-height: 100vh;
   }
   a {
     color: inherit;

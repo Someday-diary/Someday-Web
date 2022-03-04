@@ -16,6 +16,42 @@ const GlobalStyle = createGlobalStyle`
     font-family: AppleSDGothicMedium;
     src: url('/fonts/AppleSDGothicNeoM.woff') format('woff');
   }
+  @font-face {
+    font-family: Pretendard100;
+    src: url('/fonts/Pretendard-Thin.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: Pretendard200;
+    src: url('/fonts/Pretendard-ExtraLight.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: Pretendard300;
+    src: url('/fonts/Pretendard-Light.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: Pretendard400;
+    src: url('/fonts/Pretendard-Regular.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: Pretendard500;
+    src: url('/fonts/Pretendard-Medium.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: Pretendard600;
+    src: url('/fonts/Pretendard-SemiBold.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: Pretendard700;
+    src: url('/fonts/Pretendard-Bold.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: Pretendard800;
+    src: url('/fonts/Pretendard-ExtraBold.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: Pretendard900;
+    src: url('/fonts/Pretendard-Black.woff2') format('woff2');
+  }
 
   html{
     height: 100%;

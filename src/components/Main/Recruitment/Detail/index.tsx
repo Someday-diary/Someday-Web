@@ -75,7 +75,7 @@ const RecruitmentDetail = () => {
             <S.ButtonForm>
               <S.SubmitButton 
                 onClick={() => {
-                  alert('지원페이지로 이동하는 버튼')
+                  router.push(`/apply?jobGroup=${jobDescription.jobDescription[idx-1]?.jobGroup}`)
                 }}
               >
                 지원하기

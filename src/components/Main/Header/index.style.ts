@@ -33,5 +33,6 @@ export const HeaderItem = styled.span`
 
   &:hover {
     font-family: AppleSDGothicBold;
+    cursor: pointer;
   }
 `;

@@ -28,6 +28,7 @@ export const Layout = styled.div`
   &:hover {
     text-decoration: underline;
     text-underline-position: under;
+    cursor: pointer;
 
     td[id='first'] {
     width: 400px;

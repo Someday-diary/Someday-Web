@@ -3,7 +3,15 @@ import * as S from 'src/components/Main/Recruitment/List/index.style';
 import jobGroup from "src/config/jobGroup.json";
 import RecruitmentItem from 'src/components/Main/Recruitment/Item/index';
 
+import { useEffect } from 'react';
+import { handleGetRecruitList } from 'src/lib/api/recruit/index.api';
+import axios from 'axios';
+
 const RecruitmentList = () => {
+  // useEffect(() => {
+  //   axios.get('https://recruit.someday.or.kr/recruit').then(res => console.log(res)).catch(err => console.log(err))
+  // }, []);
+
   return (
     <>
       <S.ListTitle>

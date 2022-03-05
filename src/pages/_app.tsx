@@ -4,6 +4,7 @@ import type { AppProps } from "next/app";
 
 import GlobalStyle from 'src/styles/global-styles';
 import ErrorBoundary from 'src/components/ErrorBoundary/ErrorBoundary';
+import Modal from 'react-modal';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -15,5 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     </RecoilRoot>
   )
 }
+
+Modal.setAppElement('#__next')
 
 export default MyApp

@@ -1,16 +1,19 @@
 import * as S from 'src/components/Main/Recruitment/List/index.style';
 
-import jobGroup from "src/config/jobGroup.json";
 import RecruitmentItem from 'src/components/Main/Recruitment/Item/index';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { handleGetRecruitList } from 'src/lib/api/recruit/index.api';
-import axios from 'axios';
 
 const RecruitmentList = () => {
-  // useEffect(() => {
-  //   axios.get('https://recruit.someday.or.kr/recruit').then(res => console.log(res)).catch(err => console.log(err))
-  // }, []);
+  const [jobGroup, setJobGroup] = useState<object[]>();
+  useEffect(() => {
+    handleGetRecruitList().then(res => {
+      setJobGroup(res.result);
+    }).catch(err => {
+      console.log(err);
+    });
+  }, []);
 
   return (
     <>
@@ -23,15 +26,15 @@ const RecruitmentList = () => {
       </S.ListTitle>
 
       {
-        jobGroup.jobGroup.map(
-          job => {
-            return <RecruitmentItem 
-              key={job.id} 
-              id={job.id} 
-              jobGroup={job.jobGroup} 
-              deadline={job.deadline} 
-            />;
-          }
+        jobGroup && (
+          jobGroup.map(
+            job => {
+              return <RecruitmentItem
+                key={job}
+                object={job}
+              />
+            }
+          )
         )
       }
     </>

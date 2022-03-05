@@ -22,8 +22,8 @@ const CustomModal = (props: any) => {
         margin: 'auto',
       },
       content: {
-        width: '29.3%',
-        height: '36.4%',
+        width: '500px',
+        height: '295px',
         margin: 'auto',
         padding: '30px',
         borderRadius: '16px'

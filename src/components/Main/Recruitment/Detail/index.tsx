@@ -25,7 +25,7 @@ const RecruitmentDetail = () => {
     <S.Layout lang="200">
       <S.BannerImage src="/image/DesignerBanner.svg" />
       {
-        idx && idx < jobDescription.jobDescription.length && (
+        idx && idx <= jobDescription.jobDescription.length && (
           <S.Container>
             <S.MainTitle>{jobDescription.jobDescription[idx-1]?.jobGroup}</S.MainTitle>
             <S.Title>팀원으로서 하게 될 업무</S.Title>

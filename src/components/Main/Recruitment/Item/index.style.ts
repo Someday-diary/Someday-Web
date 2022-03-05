@@ -26,14 +26,49 @@ export const Layout = styled.div`
   }
 
   &:hover {
-    text-decoration: underline;
-    text-underline-position: under;
     cursor: pointer;
 
     td[id='first'] {
-    width: 400px;
-    font-family: Pretendard800;
-    font-size: 18px;
+      font-family: Pretendard800;
+      font-size: 18px;
+
+      div {
+        margin-right: auto;
+
+        &::after {
+          content: '';
+          width: 10%;
+          height: 1px;
+          display: block;
+          position: absolute;
+          margin-top: -16px;
+          border-bottom: 3px solid #364863;
+        }
+      }
+    }
+
+    td[id='second'] {
+      &::after {
+        content: '';
+        width: 3.2%;
+        height: 1px;
+        display: block;
+        position: absolute;
+        margin-top: -17px;
+        border-bottom: 3px solid #5A78A5;
+      }
+    }
+
+    td[id='third'] {
+      &::after {
+        content: '';
+        width: 3.2%;
+        height: 1px;
+        display: block;
+        position: absolute;
+        margin-top: -17px;
+        border-bottom: 3px solid #364863;
+      }
     }
   }
 `;

@@ -4,9 +4,10 @@ import RecruitmentItem from 'src/components/Main/Recruitment/Item/index';
 
 import { useEffect, useState } from 'react';
 import { handleGetRecruitList } from 'src/lib/api/recruit/index.api';
+import { IJobGroupList } from 'src/types/recruit';
 
 const RecruitmentList = () => {
-  const [jobGroup, setJobGroup] = useState<object[]>();
+  const [jobGroup, setJobGroup] = useState<IJobGroupList[]>();
   useEffect(() => {
     handleGetRecruitList().then(res => {
       setJobGroup(res.result);
@@ -14,6 +15,8 @@ const RecruitmentList = () => {
       console.log(err);
     });
   }, []);
+
+  const widths = ['8.5', '6.5', '9.5', '9.3', '7.1'];
 
   return (
     <>
@@ -32,6 +35,7 @@ const RecruitmentList = () => {
               return <RecruitmentItem
                 key={job}
                 object={job}
+                width={widths[Number(job.id) - 1]}
               />
             }
           )

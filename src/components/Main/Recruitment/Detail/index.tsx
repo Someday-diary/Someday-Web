@@ -20,6 +20,8 @@ const RecruitmentDetail = () => {
       router.push('/recruitment');
     }
   }, [id]);
+  
+  console.log();
 
   return (
     <S.Layout lang="200">
@@ -35,12 +37,13 @@ const RecruitmentDetail = () => {
               <S.MainTitle>{jobDescription.jobDescription[idx-1]?.jobGroup}</S.MainTitle>
               <S.Title>팀원으로서 하게 될 업무</S.Title>
               <S.Text>
-                {jobDescription.jobDescription[idx-1]?.text1}<br />
-                {jobDescription.jobDescription[idx-1]?.text2}<br />
-                {jobDescription.jobDescription[idx-1]?.text3}<br /><br />
-                {jobDescription.jobDescription[idx-1]?.text4}<br/>
-                {jobDescription.jobDescription[idx-1]?.text5}<br />
-                {jobDescription.jobDescription[idx-1]?.text6}
+                {
+                  jobDescription.jobDescription[idx-1]?.text1.split('\n').map(
+                    text => {
+                      return <div>{text}</div>
+                    }
+                  )
+                }
               </S.Text>
               {
                 jobDescription.jobDescription[idx-1]?.innerImage && (
@@ -49,18 +52,27 @@ const RecruitmentDetail = () => {
               }
               <S.Title>우대사항</S.Title>
               <S.Text>
-                {jobDescription.jobDescription[idx-1]?.text7}<br />
-                {jobDescription.jobDescription[idx-1]?.text8}
+                {
+                  jobDescription.jobDescription[idx-1]?.text2.split('\n').map(
+                    text => {
+                      return <div>{text}</div>
+                    }
+                  )
+                }
               </S.Text>
               <S.Title>채용과정</S.Title>
               <S.Text>
-                {jobDescription.jobDescription[idx-1]?.text9}<br />
-                {jobDescription.jobDescription[idx-1]?.text10}
+                {jobDescription.jobDescription[idx-1]?.text3}
               </S.Text>
               <S.Title>선배의 한마디</S.Title>
               <S.TextForm>
-                <div id='first'>{jobDescription.jobDescription[idx-1]?.text11}</div>
-                <div>{jobDescription.jobDescription[idx-1]?.text12}</div>
+                {
+                  jobDescription.jobDescription[idx-1]?.text4?.split('\n').map(
+                    text => {
+                      return <div id="first">{text}</div>
+                    }
+                  )
+                }
               </S.TextForm>
               <S.Line />
               <S.Form>

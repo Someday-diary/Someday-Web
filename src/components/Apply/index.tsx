@@ -8,6 +8,8 @@ import useInput from "src/hooks/useInput";
 import toast, { Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
 import CustomModal from "../Modal";
+import PhoneNumberInputBox from "./InputBox/phoneNumber";
+import SchoolNumberInputBox from "./InputBox/schoolNumber";
 
 const ApplyForm = (props: any) => {
   const [number, onChangeNumber] = useInput<string>('');
@@ -54,14 +56,15 @@ const ApplyForm = (props: any) => {
   return (
     <S.ApplyLayout>
       <S.Title>{props.query} 지원서</S.Title>
-      <S.Content>
-        <InputBox 
-          title="학번" 
+      <S.Content onSubmit={(e) => {e.preventDefault(); }}>
+        <SchoolNumberInputBox 
+          text="학번" 
           onChange={onChangeNumber} 
           value={number} 
           onClick={onClickNumberEvent} 
           setter={setNumberText} 
-          type="number" 
+          type="text" 
+          maxLength={4}
         />
         <S.Message>
           <div>*학번은 학년, 반, 번호 순서대로 기입합니다.</div>
@@ -76,7 +79,7 @@ const ApplyForm = (props: any) => {
           )
         }
         <InputBox 
-          title="이름" 
+          text="이름" 
           onChange={onChangeName} 
           value={name} 
           onClick={onClickNameEvent} 
@@ -90,13 +93,14 @@ const ApplyForm = (props: any) => {
             <ErrorMessage text='*이름을 입력해주세요' />
           )
         }
-        <InputBox 
-          title="전화번호" 
+        <PhoneNumberInputBox 
+          text="전화번호" 
           onChange={onChangePhoneNumber} 
           value={phoneNumber} 
           onClick={onClickPhoneNumberEvent} 
           setter={setPhoneNumberText} 
-          type="number" 
+          type="text" 
+          maxLength={13}
         />
         {
           countPhoneNumber === 0 || phoneNumber.length !== 0 ? (
@@ -106,13 +110,14 @@ const ApplyForm = (props: any) => {
           )
         }
         <InputBox 
-          title="이메일" 
+          text="이메일" 
           onChange={onChangeEmail} 
           value={email} 
           onClick={onClickEmailEvent} 
           setter={setEmailText} 
           type="email" 
           placeholder="@dgsw.hs.kr" 
+          pattern="^\w+((\.\w+)?)+@\w+.?\w+\.\w+$"
         />
         {
           countEmail === 0 || email.length !== 0 ? (
@@ -123,7 +128,7 @@ const ApplyForm = (props: any) => {
         }
         {
           number.length !== 0 && name.length !== 0 && phoneNumber.length !== 0 && email.length !== 0 ? (
-            <S.SubmitButton type='button' onClick={() => setModalIsOpen(true)}>제출 하기</S.SubmitButton>
+            <S.SubmitButton type='submit'>제출 하기</S.SubmitButton>
           ) : (
             <S.SubmitButton disabled>제출 하기</S.SubmitButton>
           )

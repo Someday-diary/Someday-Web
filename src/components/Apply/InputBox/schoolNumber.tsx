@@ -1,6 +1,6 @@
 import * as S from "src/components/Apply/InputBox/index.style";
 
-const InputBox = (props: any) => {
+const SchoolNumberInputBox = (props: any) => {
   return (
     <>
       <S.InputBox>
@@ -21,14 +21,13 @@ const InputBox = (props: any) => {
             props.setter(props.text);
           }} 
           onChange={props.onChange} 
-          value={props.value}
+          value={props.value.replace(/[^0-9]/, '').replace(/^(\d{4})$/, '$1')}
           placeholder={props.placeholder}
           maxLength={props.maxLength}
-          pattern={props.pattern}
         />
       </S.InputBox>
     </>
   );
 };
 
-export default InputBox;
+export default SchoolNumberInputBox;

@@ -42,7 +42,7 @@ const MainHeader = ( props: any ) => {
           onClick={() => {alert('아직 지원하지 않는 기능이에요 :)')}}
         >
           <a title='아직 지원하지 않는 기능이에요 :)'>
-            회사소개
+            팀 소개
           </a>
           {/* <Link href='/'>
             <a>회사소개</a>

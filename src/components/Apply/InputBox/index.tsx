@@ -5,24 +5,26 @@ const InputBox = (props: any) => {
     <>
       <S.InputBox>
         <div>
-          {props.title}
+          {props.text}
           <S.Dot></S.Dot>
         </div>
         <input 
           type={props.type} 
           onClick={() => {
-            if (!sessionStorage.getItem(props.title)) {
-              sessionStorage.setItem(props.title, '1');
+            if (!sessionStorage.getItem(props.text)) {
+              sessionStorage.setItem(props.text, '1');
             } else {
-              const num = Number(sessionStorage.getItem(props.title)) + 1;
-              sessionStorage.setItem(props.title, String(num));
+              const num = Number(sessionStorage.getItem(props.text)) + 1;
+              sessionStorage.setItem(props.text, String(num));
             }
             props.onClick();
-            props.setter(props.title);
+            props.setter(props.text);
           }} 
           onChange={props.onChange} 
           value={props.value}
           placeholder={props.placeholder}
+          maxLength={props.maxLength}
+          pattern={props.pattern}
         />
       </S.InputBox>
     </>

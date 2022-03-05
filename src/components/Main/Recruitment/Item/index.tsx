@@ -3,8 +3,9 @@ import * as S from 'src/components/Main/Recruitment/Item/index.style';
 import { useRouter } from 'next/router';
 
 const RecruitmentItem = ( props: any ) => {
-  const { id, jobGroup, deadline } = props;
+  const { id, name, deadline } = props.object;
   const router = useRouter();
+  console.log(props.width);
 
   return (
     <S.Layout 
@@ -13,9 +14,17 @@ const RecruitmentItem = ( props: any ) => {
       }}
     >
       <table>
-        <td id='first'>{jobGroup}</td>
+        <td id='first' lang={props.width}>
+          <div>{name}</div>
+        </td>
         <td id='second'>7기 신입생</td>
-        <td id='third'>{deadline}</td>
+        <td id='third'>
+          {
+            deadline === '0001-01-01T00:00:00Z' && (
+              '상시 채용'
+            )
+          }
+        </td>
       </table>
     </S.Layout>
   );

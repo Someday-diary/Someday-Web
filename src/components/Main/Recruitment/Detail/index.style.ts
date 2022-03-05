@@ -31,8 +31,8 @@ export const Title = styled.div`
 export const Text = styled.div`
   margin-top: 8px;
   font-family: Pretendard400;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 26px;
 `;
 
 export const Image = styled.img`
@@ -41,7 +41,7 @@ export const Image = styled.img`
 
 export const TextForm = styled.div`
   margin-top: 8px;
-  width: 540px;
+  width: 820px;
   height: 112px;
   background-color: #EFF2F6;
   line-height: 112px;
@@ -50,13 +50,8 @@ export const TextForm = styled.div`
   font-size: 16px;
 
   div[id='first'] {
-    padding-top: 20px;
-  }
-
-  div {
-    width: 500px;
-    line-height: 24px;
-    margin: auto;
+    padding: 20px;
+    line-height: 30px;
   }
 `;
 
@@ -102,7 +97,7 @@ export const SubmitButton = styled.button`
   color: #FFFFFF;
   background-color: #33CC99;
   font-family: Pretendard600;
-  font-size: 14px;
+  font-size: 16px;
 
   :hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -118,10 +113,10 @@ export const QuestionButton = styled.div`
   color: #33CC99;
   background-color: #D6F5EB;
   font-family: Pretendard600;
-  font-size: 14px;
+  font-size: 16px;
 
   :hover {
-    background-color: #6FDCB9;
+    background-color: #ADEBD7;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
 `;

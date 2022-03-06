@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import toast, { Toaster } from 'react-hot-toast';
 
 import * as S from 'src/components/Main/Header/index.style';
 
@@ -11,6 +12,21 @@ const MainHeader = ( props: any ) => {
         <S.MainIcon 
           src='/image/MainIcon.jpg' 
           title='아직 지원하지 않는 기능이에요 :)' 
+          onClick={() => {
+            toast('아직 지원하지 않는 기능이에요 :)',
+              {
+                style: {
+                  borderRadius: '8px',
+                  maxWidth: '516px',
+                  height: '43px',
+                  fontSize: '16px',
+                  fontFamily: 'Pretendard400',  
+                  background: 'rgba(18, 24, 33, 0.8)',
+                  color: '#FFFFFF'
+                }
+              }
+            )
+          }}
         />
         <S.HeaderItem 
           color={title1} 
@@ -27,7 +43,21 @@ const MainHeader = ( props: any ) => {
         <S.HeaderItem 
           color={title3} 
           id='not-use' 
-          onClick={() => {alert('아직 지원하지 않는 기능이에요 :)')}}
+          onClick={() => {
+            toast('아직 지원하지 않는 기능이에요 :)',
+              {
+                style: {
+                  borderRadius: '8px',
+                  maxWidth: '516px',
+                  height: '43px',
+                  fontSize: '16px',
+                  fontFamily: 'Pretendard400',  
+                  background: 'rgba(18, 24, 33, 0.8)',
+                  color: '#FFFFFF'
+                }
+              }
+            )
+          }}
         >
           <a title='아직 지원하지 않는 기능이에요 :)'>
             팀원소개
@@ -39,7 +69,21 @@ const MainHeader = ( props: any ) => {
         <S.HeaderItem 
           color={title4} 
           id='not-use' 
-          onClick={() => {alert('아직 지원하지 않는 기능이에요 :)')}}
+          onClick={() => {
+            toast('아직 지원하지 않는 기능이에요 :)',
+              {
+                style: {
+                  borderRadius: '8px',
+                  maxWidth: '516px',
+                  height: '43px',
+                  fontSize: '16px',
+                  fontFamily: 'Pretendard400',  
+                  background: 'rgba(18, 24, 33, 0.8)',
+                  color: '#FFFFFF'
+                }
+              }
+            )
+          }}
         >
           <a title='아직 지원하지 않는 기능이에요 :)'>
             팀 소개
@@ -49,6 +93,11 @@ const MainHeader = ( props: any ) => {
           </Link> */}
         </S.HeaderItem>
       </S.Layout>
+      <Toaster position="bottom-center" toastOptions={{
+        style: {
+          width: '560px'
+        }
+      }} />
     </S.Container>
   );
 };

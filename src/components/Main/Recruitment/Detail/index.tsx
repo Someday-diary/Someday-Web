@@ -20,8 +20,6 @@ const RecruitmentDetail = () => {
       router.push('/recruitment');
     }
   }, [id]);
-  
-  console.log();
 
   return (
     <S.Layout lang="200">
@@ -96,7 +94,7 @@ const RecruitmentDetail = () => {
               <S.ButtonForm>
                 <S.SubmitButton 
                   onClick={() => {
-                    router.push(`/apply?jobGroup=${jobDescription.jobDescription[idx-1]?.jobGroup}`)
+                    router.push(`/apply?jobGroup=${jobDescription.jobDescription[idx-1]?.jobGroup}&recruit=${idx}`, `/apply?jobGroup=${jobDescription.jobDescription[idx-1]}`)
                   }}
                 >
                   지원하기

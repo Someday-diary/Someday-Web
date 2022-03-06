@@ -2,11 +2,8 @@ import * as S from "src/components/Modal/index.style";
 
 import ReactModal from "react-modal";
 
-import { useRouter } from "next/router";
-
 const CustomModal = (props: any) => {
   const { setModalIsOpen, title, number, name, phoneNumber, email } = props;
-  const router = useRouter();
 
   return (
     <ReactModal 
@@ -26,7 +23,8 @@ const CustomModal = (props: any) => {
         height: '295px',
         margin: 'auto',
         padding: '30px',
-        borderRadius: '16px'
+        borderRadius: '16px',
+        overflow: 'hidden'
       }
     }}>
       <S.ModalTitle>{title} 지원서</S.ModalTitle>
@@ -40,11 +38,10 @@ const CustomModal = (props: any) => {
         *입력된 이메일을 통해, 사전과제 및 합격 여부를 전송해드립니다.<br />
         *제출하시면, 지원 내역을 수정할 수 없습니다.
       </S.Text>
-      <S.CancelButton onClick={() => {props.setModalIsOpen(false)}}>닫기</S.CancelButton>
+      <S.CancelButton onClick={() => {props.setModalIsOpen(false)}}>뒤로가기</S.CancelButton>
       <S.SubmitButton onClick={() => {
-        // 서버에 값 저장하는 코드
-        router.push(`/success?name=${name}&jobGroup=${title}`)
-      }}>제출</S.SubmitButton>
+        props.onClick();  
+      }}>제출하기</S.SubmitButton>
     </ReactModal>
   );
 };

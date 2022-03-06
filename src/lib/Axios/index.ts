@@ -1,13 +1,6 @@
-import axios, { AxiosError, AxiosInstance } from "axios";
+import axios, { AxiosError } from "axios";
 
 import RECRUIT_SERVER from 'src/config/config.json';
-
-export const request: AxiosInstance = axios.create({
-  baseURL: RECRUIT_SERVER.RECRUIT_SERVER,
-  headers: {
-    'Access-Control-Allow-Origin': '*'
-  }
-});
 
 export let instance = axios.create({
   baseURL: RECRUIT_SERVER.RECRUIT_SERVER

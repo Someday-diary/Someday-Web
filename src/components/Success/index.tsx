@@ -9,7 +9,7 @@ const SuccessForm = () => {
     <S.SuccessForm>
       <S.Image src='/image/Check.svg' width='80px' height='80px' />
       <S.Title>
-        <div>{router.query['name']}님, {router.query['jobGroup']}</div>
+        <div id='first'>{router.query['name']}님, {router.query['jobGroup']}</div>
         <div>지원이 성공적으로 완료되었습니다.</div>
       </S.Title>
       <S.SubTitle>

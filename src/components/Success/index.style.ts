@@ -15,12 +15,15 @@ export const Image = styled.img`
 
 export const Title = styled.div`
   margin-top: 50px;
+  color: #121821;
   font-family: Pretendard700;
   font-size: 40px;
+  line-height: 48px;
 `;
 
 export const SubTitle = styled.div`
   margin-top: 8px;
+  color: #454B54;
   font-family: Pretendard600;
   font-size: 18px;
 `;

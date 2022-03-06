@@ -1,12 +1,10 @@
-import { colorPalette } from "src/styles/colorPalette";
-
 import styled from "styled-components";
 
 export const Title = styled.div`
   margin: auto;
   width: 1200px;
   height: 40px;
-  background-color: ${colorPalette.csTitle};
+  background-color: #19C29E;
   border-radius: 5px;
 `;
 
@@ -15,7 +13,7 @@ export const CSNumber = styled.div`
   height: 40px;
   line-height: 40px;
   font-size: 20px;
-  color: ${colorPalette.white};
+  color: #FFFFFF;
   text-align: center;
   float: left;
 `;
@@ -25,7 +23,7 @@ export const CSTitle = styled.div`
   height: 40px;
   line-height: 40px;
   font-size: 20px;
-  color: ${colorPalette.white};
+  color: #FFFFFF;
   text-align: left;
   float: left;
 `;

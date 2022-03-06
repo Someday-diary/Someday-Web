@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
-import { colorPalette } from "src/styles/colorPalette";
-
 export const Container = styled.div`
   width: 100%;
   height: 60px;
-  border: 2px solid ${colorPalette.mainHeaderLine};
+  border: 2px solid #EFF2F6;
 `;
 
 export const Layout = styled.div`

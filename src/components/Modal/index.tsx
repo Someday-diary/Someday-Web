@@ -29,9 +29,9 @@ const CustomModal = (props: any) => {
     }}>
       <S.ModalTitle>{title} 지원서</S.ModalTitle>
       <S.ModalText>
-        <div>학번: {number}</div>
+        <div>학번: {number.replace(/[^0-9]/g, '')}</div>
         <div>이름: {name}</div>
-        <div>전화번호: {phoneNumber}</div>
+        <div>전화번호: {phoneNumber.replace(/[^0-9]/g, '').replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, '$1-$2-$3')}</div>
         <div>이메일: {email}</div>
       </S.ModalText>
       <S.Text>

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colorPalette } from "src/styles/colorPalette";
 
 export const LoginBackground = styled.div`
   position: relative;
@@ -9,8 +8,8 @@ export const LoginBackground = styled.div`
   margin: auto;
   border-radius: 50px;
   text-align: center;
-  box-shadow: 0px 0px 8px 10px ${colorPalette.shadow};
-  background-color: ${colorPalette.white};
+  box-shadow: 0px 0px 8px 10px rgba(178, 193, 207, 0.25);
+  background-color: #FFFFFF;
 
   @media only screen and (max-height: 1000px) {
     top: 120px;
@@ -31,14 +30,14 @@ export const LoginContainer = styled.div`
 
 export const LoginFormTitle = styled.div`
   font-size: 18px;
-  color: ${colorPalette.black};
+  color: #000000;
 `;
 
 export const LoginFormInput = styled.input`
   width: 550px;
   height: 30px;
   border: 0px;
-  border-bottom: 2px solid ${colorPalette.inputBorder};
+  border-bottom: 2px solid #DEE2E6;
   margin-top: 10px;
   font-size: 16px;
   margin-left: 5px;
@@ -46,11 +45,11 @@ export const LoginFormInput = styled.input`
   &::placeholder {
     margin-left: 5px;
     font-size: 16px;
-    color: ${colorPalette.inputPlaceholder};
+    color: #B3C1CF;
   }
 
   &:focus {
-    border-bottom: 2px solid ${colorPalette.green2};
+    border-bottom: 2px solid #89D9C8;
     font-size: 16px;
   }
 `;
@@ -58,9 +57,9 @@ export const LoginFormInput = styled.input`
 export const LoginFormButton = styled.button`
   width: 350px;
   height: 80px;
-  background-color: ${colorPalette.green2};
+  background-color: #89D9C8;
   border-radius: 7px;
-  color: ${colorPalette.white};
+  color: #FFFFFF;
   font-size: 24px;
   margin-top: 80px;
 `;

@@ -1,4 +1,3 @@
-import { colorPalette } from "src/styles/colorPalette";
 import styled from "styled-components";
 
 export const Layout = styled.div`
@@ -29,7 +28,7 @@ export const TitleBox = styled.textarea`
   resize: none;
   border: none;
   border-radius: 7px;
-  box-shadow: 0px 0px 8px 4px ${colorPalette.blueShadow};
+  box-shadow: 0px 0px 8px 4px rgba(151, 186, 255, 0.25);
   line-height: 65px;
   padding-left: 25px;
 
@@ -45,7 +44,7 @@ export const TextBox = styled.textarea`
   resize: none;
   border: none;
   border-radius: 7px;
-  box-shadow: 0px 0px 8px 4px ${colorPalette.blueShadow};
+  box-shadow: 0px 0px 8px 4px rgba(151, 186, 255, 0.25);
   padding-top: 25px;
   padding-left: 25px;
 

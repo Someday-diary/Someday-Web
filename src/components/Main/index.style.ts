@@ -1,4 +1,3 @@
-import { colorPalette } from "src/styles/colorPalette";
 import styled from "styled-components";
 
 export const Layout = styled.div`
@@ -25,7 +24,7 @@ export const MainTitle = styled.div`
   top: 380px;
   width: 1360px;
   height: 236px;
-  background-color: ${colorPalette.mainTitleBackground};
+  background-color: #F3F3F3;
   border-radius: 20px;
 `;
 

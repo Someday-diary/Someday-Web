@@ -63,7 +63,7 @@ export const Line = styled.div`
 `;
 
 export const Form = styled.div`
-  width: 660px;
+  width: 820px;
   height: 50px;
   margin-bottom: 8px;
   background-color: #F9FAFB;

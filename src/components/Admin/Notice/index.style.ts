@@ -1,4 +1,3 @@
-import { colorPalette } from "src/styles/colorPalette";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -8,7 +7,7 @@ export const Container = styled.div`
   margin: auto;
   margin-top: 60px;
   text-align: center;
-  box-shadow: 0px 0px 8px 10px ${colorPalette.shadow};
+  box-shadow: 0px 0px 8px 10px rgba(178, 193, 207, 0.25);
 `;
 
 export const FormContainer = styled.form`
@@ -32,7 +31,7 @@ export const TItleInput = styled.input`
   border: none;
   font-size: 20px;
   padding-left: 15px;
-  background-color: ${colorPalette.gray};
+  background-color: #D4D4D4;
 `;
 
 export const Notice = styled.textarea`
@@ -41,7 +40,7 @@ export const Notice = styled.textarea`
   border: none;
   border-radius: 7px;
   resize: none;
-  background-color: ${colorPalette.gray};
+  background-color: #D4D4D4;
   padding: 0px;
   padding-top: 5px;
   padding-left: 15px;
@@ -55,10 +54,10 @@ export const Notice = styled.textarea`
 export const SubmitButton = styled.button`
   width: 200px;
   height: 60px;
-  background-color: ${colorPalette.green2};
+  background-color: #89D9C8;
   margin: auto;
   margin-top: 40px;
   border-radius: 5px;
   font-size: 20px;
-  color: ${colorPalette.white};
+  color: #FFFFFF;
 `;

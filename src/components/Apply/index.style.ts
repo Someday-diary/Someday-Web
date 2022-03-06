@@ -45,3 +45,7 @@ export const SubmitButton = styled.button`
     color: #FFFFFF;
   `}
 `;
+
+export const Footer = styled.div`
+  height: 80px;
+`;

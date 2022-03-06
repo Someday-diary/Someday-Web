@@ -10,7 +10,7 @@ const MainHeader = ( props: any ) => {
     <S.Container>
       <S.Layout> 
         <S.MainIcon 
-          src='/image/MainIcon.jpg' 
+          src='/image/MainIcon.svg' 
           title='아직 지원하지 않는 기능이에요 :)' 
           onClick={() => {
             toast('아직 지원하지 않는 기능이에요 :)',

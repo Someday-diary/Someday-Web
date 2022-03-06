@@ -22,7 +22,6 @@ const InputBox = (props: any) => {
           }} 
           onChange={props.onChange} 
           value={props.value}
-          placeholder={props.placeholder}
           maxLength={props.maxLength}
           pattern={props.pattern}
         />

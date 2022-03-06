@@ -32,13 +32,6 @@ export const InputBox = styled.div`
     :focus {
       border: 2px solid #33CC99;
     }
-
-    ::placeholder {
-      text-align: right;
-      font-family: Pretendard600;
-      font-size: 16px;
-      color: #9caec9;
-    }
   }
 `;
 

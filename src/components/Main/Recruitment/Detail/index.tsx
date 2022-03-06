@@ -94,7 +94,7 @@ const RecruitmentDetail = () => {
               <S.ButtonForm>
                 <S.SubmitButton 
                   onClick={() => {
-                    router.push(`/apply?jobGroup=${jobDescription.jobDescription[idx-1]?.jobGroup}&recruit=${idx}`, `/apply?jobGroup=${jobDescription.jobDescription[idx-1]}`)
+                    router.push(`/apply?jobGroup=${jobDescription.jobDescription[idx-1]?.jobGroup}&recruit=${idx}`)
                   }}
                 >
                   지원하기

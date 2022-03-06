@@ -86,6 +86,7 @@ export const Form = styled.div`
 export const ButtonForm = styled.div`
   width: 250px;
   margin: auto;
+  cursor: pointer;
 `;
 
 export const SubmitButton = styled.button`

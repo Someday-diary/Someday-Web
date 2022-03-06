@@ -101,105 +101,108 @@ const ApplyForm = () => {
   console.log(router.query);
 
   return (
-    <S.ApplyLayout>
-      <S.Title>{router.query['jobGroup']} 지원서</S.Title>
-      <S.Content onSubmit={onSubmit}>
-        <InputBox 
-          text="학번" 
-          type="text" 
-          onClick={onClickNumberEvent} 
-          onChange={onChangeNumber} 
-          value={number.replace(/[^0-9]/g, '').replace(/^(\d{4})$/, '$1')} 
-          setter={setNumberText} 
-          maxLength={4}
-        />
-        <S.Message>
-          <div>*학번은 학년, 반, 번호 순서대로 기입합니다.</div>
-          <div>*번호가 한자리수일 경우에 앞에 0을 기입후 번호를 기입합니다.</div>
-          <div>ex) 1학년 2반 5번 일 경우 &gt; 1205</div>
-        </S.Message>
-        {
-          countNumber === 0 || number.length === 4 ? (
-            <></>
-          ) : (
-            <ErrorMessage text='*학번을 입력해주세요' />
-          )
-        }
-        <InputBox 
-          text="이름" 
-          onChange={onChangeName} 
-          value={name.replace(/[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g, '')} 
-          onClick={onClickNameEvent} 
-          setter={setNameText} 
-          type="text" 
-        />
-        <S.Message>
-          <div>*한글만 입력이 가능합니다.</div>
-          <div>*글자가 입력되지 않는다면 한/영키를 확인해주세요.</div>
-        </S.Message>
-        {
-          countName === 0 || name.length !== 0 ? (
-            <></>
-          ) : (
-            <ErrorMessage text='*이름을 입력해주세요' />
-          )
-        }
-        <InputBox 
-          text="전화번호" 
-          onChange={onChangePhoneNumber} 
-          value={phoneNumber.replace(/[^0-9]/g, '').replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, '$1-$2-$3')} 
-          onClick={onClickPhoneNumberEvent} 
-          setter={setPhoneNumberText} 
-          type="text" 
-          maxLength={13}
-        />
-        {
-          countPhoneNumber === 0 || phoneNumber.length > 12 ? (
-            <></>
-          ) : (
-            <ErrorMessage text='*전화번호을 입력해주세요' />
-          )
-        }
-        <InputBox 
-          text="이메일" 
-          onChange={onChangeEmail} 
-          value={email} 
-          onClick={onClickEmailEvent} 
-          setter={setEmailText} 
-          type="email" 
-          pattern="^\w+((\.\w+)?)+@\w+.?\w+\.\w+$"
-        />
-        {
-          countEmail === 0 || email.length !== 0 ? (
-            <ErrorMessage text='' />
-          ) : (
-            <ErrorMessage text='*이메일을 입력해주세요' />
-          )
-        }
-        {
-          number.length !== 0 && name.length !== 0 && phoneNumber.length !== 0 && email.length !== 0 ? (
-            <S.SubmitButton type='submit'>제출 하기</S.SubmitButton>
-          ) : (
-            <S.SubmitButton disabled>제출 하기</S.SubmitButton>
-          )
-        }
-        <Toaster position="bottom-center" toastOptions={{
-          style: {
-            width: '560px'
+    <>
+      <S.ApplyLayout>
+        <S.Title>{router.query['jobGroup']} 지원서</S.Title>
+        <S.Content onSubmit={onSubmit}>
+          <InputBox 
+            text="학번" 
+            type="text" 
+            onClick={onClickNumberEvent} 
+            onChange={onChangeNumber} 
+            value={number.replace(/[^0-9]/g, '').replace(/^(\d{4})$/, '$1')} 
+            setter={setNumberText} 
+            maxLength={4}
+          />
+          <S.Message>
+            <div>*학번은 학년, 반, 번호 순서대로 기입합니다.</div>
+            <div>*번호가 한자리수일 경우에 앞에 0을 기입후 번호를 기입합니다.</div>
+            <div>ex) 1학년 2반 5번 일 경우 &gt; 1205</div>
+          </S.Message>
+          {
+            countNumber === 0 || number.length === 4 ? (
+              <></>
+            ) : (
+              <ErrorMessage text='*학번을 입력해주세요' />
+            )
           }
-        }} />
-      </S.Content>
-      <CustomModal 
-        modalIsOpen={modalIsOpen} 
-        setModalIsOpen={setModalIsOpen} 
-        title={router.query['jobGroup']} 
-        number={number} 
-        name={name} 
-        phoneNumber={phoneNumber} 
-        email={email} 
-        onClick={PostVolunteer} 
-      />
-    </S.ApplyLayout>
+          <InputBox 
+            text="이름" 
+            onChange={onChangeName} 
+            value={name.replace(/[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g, '')} 
+            onClick={onClickNameEvent} 
+            setter={setNameText} 
+            type="text" 
+          />
+          <S.Message>
+            <div>*한글만 입력이 가능합니다.</div>
+            <div>*글자가 입력되지 않는다면 한/영키를 확인해주세요.</div>
+          </S.Message>
+          {
+            countName === 0 || name.length !== 0 ? (
+              <></>
+            ) : (
+              <ErrorMessage text='*이름을 입력해주세요' />
+            )
+          }
+          <InputBox 
+            text="전화번호" 
+            onChange={onChangePhoneNumber} 
+            value={phoneNumber.replace(/[^0-9]/g, '').replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, '$1-$2-$3')} 
+            onClick={onClickPhoneNumberEvent} 
+            setter={setPhoneNumberText} 
+            type="text" 
+            maxLength={13}
+          />
+          {
+            countPhoneNumber === 0 || phoneNumber.length > 12 ? (
+              <></>
+            ) : (
+              <ErrorMessage text='*전화번호을 입력해주세요' />
+            )
+          }
+          <InputBox 
+            text="이메일" 
+            onChange={onChangeEmail} 
+            value={email} 
+            onClick={onClickEmailEvent} 
+            setter={setEmailText} 
+            type="email" 
+            pattern="^\w+((\.\w+)?)+@\w+.?\w+\.\w+$"
+          />
+          {
+            countEmail === 0 || email.length !== 0 ? (
+              <ErrorMessage text='' />
+            ) : (
+              <ErrorMessage text='*이메일을 입력해주세요' />
+            )
+          }
+          {
+            number.length !== 0 && name.length !== 0 && phoneNumber.length !== 0 && email.length !== 0 ? (
+              <S.SubmitButton type='submit'>제출 하기</S.SubmitButton>
+            ) : (
+              <S.SubmitButton disabled>제출 하기</S.SubmitButton>
+            )
+          }
+          <Toaster position="bottom-center" toastOptions={{
+            style: {
+              width: '560px'
+            }
+          }} />
+        </S.Content>
+        <CustomModal 
+          modalIsOpen={modalIsOpen} 
+          setModalIsOpen={setModalIsOpen} 
+          title={router.query['jobGroup']} 
+          number={number} 
+          name={name} 
+          phoneNumber={phoneNumber} 
+          email={email} 
+          onClick={PostVolunteer} 
+        />
+      </S.ApplyLayout>
+      <S.Footer />
+    </>
   );
 };
 

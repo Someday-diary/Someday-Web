@@ -1,4 +1,3 @@
-import { colorPalette } from "src/styles/colorPalette";
 import styled from "styled-components";
 
 export const ListTitle = styled.div`
@@ -7,7 +6,7 @@ export const ListTitle = styled.div`
   margin-top: 70px;
   width: 100%;
   height: 32px;
-  border-bottom: 1px solid ${colorPalette.mainHeaderLine};
+  border-bottom: 1px solid #EFF2F6;
   margin-bottom: 5px;
   color: 364863;
   

@@ -1,4 +1,3 @@
-import { colorPalette } from "src/styles/colorPalette";
 import styled from "styled-components";
 
 export const InputBox = styled.div`
@@ -21,7 +20,7 @@ export const InputBox = styled.div`
     font-size: 16px;
     margin-top: 8px;
     padding: 16px;
-    border: 2px solid ${colorPalette.mainHeaderLine};
+    border: 2px solid #EFF2F6;
     border-radius: 8px;
     background-color: #f9fafb;
 

@@ -99,6 +99,7 @@ export const SubmitButton = styled.button`
   background-color: #33CC99;
   font-family: Pretendard600;
   font-size: 16px;
+  cursor: pointer;
 
   :hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);

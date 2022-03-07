@@ -1,11 +1,11 @@
 /* eslint-disable */
 import * as S from "src/components/Main/Recruitment/Detail/index.style";
 
+import Image from "next/image";
 import jobDescription from "src/config/jobDescription.json";
 
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 const RecruitmentDetail = () => {
   const router = useRouter();
@@ -27,11 +27,13 @@ const RecruitmentDetail = () => {
       {
         idx && idx <= jobDescription.jobDescription.length && (
           <>
-            {
-              jobDescription.jobDescription[idx-1]?.bannerImage && (
-                <Image src={jobDescription.jobDescription[idx-1]?.bannerImage} width={'1200px'} height={'350px'} />
-              )
-            }
+            <Image 
+              src={`/image/jobGroup/DeveloperBanner${idx}.svg`} 
+              width={'1200px'} 
+              height={'350px'} 
+              placeholder={'blur'} 
+              blurDataURL={`/image/jobGroup/DeveloperBanner${idx}.svg`}
+            />
             <S.Container>
               <S.MainTitle>{jobDescription.jobDescription[idx-1]?.jobGroup}</S.MainTitle>
               <S.Title>팀원으로서 하게 될 업무</S.Title>
@@ -45,9 +47,15 @@ const RecruitmentDetail = () => {
                 }
               </S.Text>
               {
-                jobDescription.jobDescription[idx-1]?.innerImage && (
+                idx === 5 && (
                   <S.InnerImage>
-                    <Image src={jobDescription.jobDescription[idx-1]?.innerImage} width={'820px'} height={'278px'} />
+                    <Image 
+                      src={jobDescription.jobDescription[idx-1]?.innerImage} 
+                      width={'820px'} 
+                      height={'278px'} 
+                      placeholder={'blur'} 
+                      blurDataURL={'/image/jobGroup/InnerImage.svg'}
+                    />
                   </S.InnerImage>
                 )
               }

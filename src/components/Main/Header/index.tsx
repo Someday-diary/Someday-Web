@@ -16,6 +16,8 @@ const MainHeader = ( props: any ) => {
           title='아직 지원하지 않는 기능이에요 :)' 
           height={'56px'} 
           width={'80px'} 
+          placeholder={'blur'} 
+          blurDataURL={'/image/MainIcon.svg'}
           onClick={() => {
             toast('아직 지원하지 않는 기능이에요 :)',
               {

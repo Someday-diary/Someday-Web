@@ -10,7 +10,13 @@ const SuccessForm = () => {
   return (
     <S.SuccessForm>
       <S.CheckImage>
-        <Image src={'/image/Check.svg'} width='80px' height='80px' />
+        <Image 
+          src={'/image/Check.svg'} 
+          width='80px' 
+          height='80px' 
+          placeholder={'blur'} 
+          blurDataURL={'/image/Check.svg'}
+        />
       </S.CheckImage>
       <S.Title>
         <div id='first'>{router.query['name']}님, {router.query['jobGroup']}</div>

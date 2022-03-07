@@ -1,13 +1,17 @@
+/* eslint-disable */
 import * as S from 'src/components/Success/index.style';
 
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 const SuccessForm = () => {
   const router = useRouter();
   
   return (
     <S.SuccessForm>
-      <S.Image src='/image/Check.svg' width='80px' height='80px' />
+      <S.CheckImage>
+        <Image src={'/image/Check.svg'} width='80px' height='80px' />
+      </S.CheckImage>
       <S.Title>
         <div id='first'>{router.query['name']}님, {router.query['jobGroup']}</div>
         <div>지원이 성공적으로 완료되었습니다.</div>

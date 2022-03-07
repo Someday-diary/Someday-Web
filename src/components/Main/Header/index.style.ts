@@ -16,12 +16,6 @@ export const Layout = styled.div`
   }
 `;
 
-export const MainIcon = styled.img`
-  float: left;
-  height: 56px;
-  margin-right: 740px;
-`;
-
 export const HeaderItem = styled.span`
   float: right;
   line-height: 60px;

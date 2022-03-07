@@ -1,3 +1,5 @@
+/* eslint-disable */
+import Image from 'next/image';
 import Link from 'next/link';
 import toast, { Toaster } from 'react-hot-toast';
 
@@ -8,10 +10,12 @@ const MainHeader = ( props: any ) => {
 
   return (
     <S.Container>
-      <S.Layout> 
-        <S.MainIcon 
-          src='/image/MainIcon.svg' 
+      <S.Layout>
+        <Image
+          src={'/image/MainIcon.svg'} 
           title='아직 지원하지 않는 기능이에요 :)' 
+          height={'56px'} 
+          width={'80px'} 
           onClick={() => {
             toast('아직 지원하지 않는 기능이에요 :)',
               {

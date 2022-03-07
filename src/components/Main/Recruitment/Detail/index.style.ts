@@ -7,10 +7,6 @@ export const Layout = styled.div`
   height: ${props => props.lang}%;
 `;
 
-export const BannerImage = styled.img`
-  width: 1200px;
-`;
-
 export const Container = styled.div`
   width: 820px;
   margin: auto;
@@ -26,16 +22,18 @@ export const Title = styled.div`
   margin-top: 30px;
   font-family: Pretendard600;
   font-size: 18px;
+  color: #454B54;
 `;
 
 export const Text = styled.div`
   margin-top: 8px;
   font-family: Pretendard400;
   font-size: 16px;
+  color: #243042;
   line-height: 26px;
 `;
 
-export const Image = styled.img`
+export const InnerImage = styled.div`
   margin-top: 20px;
 `;
 

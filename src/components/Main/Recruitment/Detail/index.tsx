@@ -5,6 +5,7 @@ import jobDescription from "src/config/jobDescription.json";
 
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const RecruitmentDetail = () => {
   const router = useRouter();
@@ -28,7 +29,7 @@ const RecruitmentDetail = () => {
           <>
             {
               jobDescription.jobDescription[idx-1]?.bannerImage && (
-                <S.BannerImage src={jobDescription.jobDescription[idx-1]?.bannerImage} />
+                <Image src={jobDescription.jobDescription[idx-1]?.bannerImage} width={'1200px'} height={'350px'} />
               )
             }
             <S.Container>
@@ -45,7 +46,9 @@ const RecruitmentDetail = () => {
               </S.Text>
               {
                 jobDescription.jobDescription[idx-1]?.innerImage && (
-                  <S.Image src={jobDescription.jobDescription[idx-1]?.innerImage} />
+                  <S.InnerImage>
+                    <Image src={jobDescription.jobDescription[idx-1]?.innerImage} width={'820px'} height={'278px'} />
+                  </S.InnerImage>
                 )
               }
               <S.Title>우대사항</S.Title>

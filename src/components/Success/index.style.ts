@@ -7,9 +7,8 @@ export const SuccessForm = styled.div`
   height: 100%;
 `;
 
-export const Image = styled.img`
+export const CheckImage = styled.div`
   text-align: center;
-  margin-left: 380px;
   margin-top: 250px;
 `;
 

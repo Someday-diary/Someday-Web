@@ -98,8 +98,6 @@ const ApplyForm = () => {
     })
   }
 
-  console.log(router.query);
-
   return (
     <>
       <S.ApplyLayout>

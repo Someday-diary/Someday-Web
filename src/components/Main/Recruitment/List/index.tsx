@@ -1,13 +1,17 @@
 import * as S from 'src/components/Main/Recruitment/List/index.style';
+import 'react-loading-skeleton/dist/skeleton.css';
 
 import RecruitmentItem from 'src/components/Main/Recruitment/Item/index';
 
 import { useEffect, useState } from 'react';
 import { handleGetRecruitList } from 'src/lib/api/recruit/index.api';
 import { IJobGroupList } from 'src/types/recruit';
+import Skeleton from 'react-loading-skeleton';
 
 const RecruitmentList = () => {
   const [jobGroup, setJobGroup] = useState<IJobGroupList[]>();
+  const [loading, setLoading] = useState<boolean>(true);
+
   useEffect(() => {
     handleGetRecruitList().then(res => {
       setJobGroup(res.result);
@@ -16,7 +20,16 @@ const RecruitmentList = () => {
     });
   }, []);
 
-  const widths = ['8.5', '6.5', '9.5', '9.3', '7.1'];
+  useEffect(() => {
+    if (jobGroup)
+      setLoading(false);
+  }, [jobGroup]);
+
+  const ItemSkeleton: object = {
+    'height': '50px',
+    'margin-top': '20px',
+    'margin-bottom': '15px'
+  }
 
   return (
     <>
@@ -29,15 +42,20 @@ const RecruitmentList = () => {
       </S.ListTitle>
 
       {
-        jobGroup && (
-          jobGroup.map(
-            job => {
-              return <RecruitmentItem
-                key={job}
-                object={job}
-                width={widths[Number(job.id) - 1]}
-              />
-            }
+        loading === true ? (
+          <>
+            <Skeleton count={10} style={ItemSkeleton} />
+          </>
+        ) : (
+          jobGroup && (
+            jobGroup.map(
+              job => {
+                return <RecruitmentItem
+                  key={job}
+                  object={job}
+                />
+              }
+            )
           )
         )
       }

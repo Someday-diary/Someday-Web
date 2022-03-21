@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 const RecruitmentItem = ( props: any ) => {
   const { id, name, deadline } = props.object;
   const router = useRouter();
-  console.log(props.width);
 
   return (
     <S.Layout 

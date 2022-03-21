@@ -124,3 +124,8 @@ export const QuestionButton = styled.div`
 export const Bottom = styled.div`
   height: 70px;
 `;
+
+export const SkeletonContainer = styled.div`
+  width: 820px;
+  margin: auto;
+`;

@@ -13,13 +13,13 @@ const MainHeader = ( props: any ) => {
       <S.Layout>
         <Image
           src={'/image/MainIcon.svg'} 
-          title='아직 지원하지 않는 기능이에요 :)' 
+          title='This feature is not yet supported :)' 
           height={'56px'} 
           width={'80px'} 
           placeholder={'blur'} 
           blurDataURL={'/image/MainIcon.svg'}
           onClick={() => {
-            toast('아직 지원하지 않는 기능이에요 :)',
+            toast('This feature is not yet supported :)',
               {
                 style: {
                   borderRadius: '8px',
@@ -38,19 +38,19 @@ const MainHeader = ( props: any ) => {
           color={title1} 
         >
           <Link href='https://open.kakao.com/o/szJTIe3d'>
-            <a title='오픈 채팅방 링크입니다 :)' target='_blank'>질문하기</a>
+            <a title='This is the link to the Kakao Open Chat Room :)' target='_blank'>Ask</a>
           </Link>
         </S.HeaderItem>
         <S.HeaderItem color={title2}>
           <Link href='/recruitment'>
-            <a>채용</a>
+            <a>Recruit</a>
           </Link>
         </S.HeaderItem>
         <S.HeaderItem 
           color={title3} 
           id='not-use' 
           onClick={() => {
-            toast('아직 지원하지 않는 기능이에요 :)',
+            toast('This feature is not yet supported :)',
               {
                 style: {
                   borderRadius: '8px',
@@ -65,8 +65,8 @@ const MainHeader = ( props: any ) => {
             )
           }}
         >
-          <a title='아직 지원하지 않는 기능이에요 :)'>
-            팀원소개
+          <a title='This feature is not yet supported :)'>
+            Member
           </a>
           {/* <Link href='/'>
             <a>팀원소개</a>
@@ -76,7 +76,7 @@ const MainHeader = ( props: any ) => {
           color={title4} 
           id='not-use' 
           onClick={() => {
-            toast('아직 지원하지 않는 기능이에요 :)',
+            toast('This feature is not yet supported :)',
               {
                 style: {
                   borderRadius: '8px',
@@ -91,8 +91,8 @@ const MainHeader = ( props: any ) => {
             )
           }}
         >
-          <a title='아직 지원하지 않는 기능이에요 :)'>
-            팀 소개
+          <a title='This feature is not yet supported :)'>
+            Team
           </a>
           {/* <Link href='/'>
             <a>회사소개</a>

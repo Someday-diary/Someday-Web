@@ -19,13 +19,13 @@ const SuccessForm = () => {
         />
       </S.CheckImage>
       <S.Title>
-        <div id='first'>{router.query['name']}님, {router.query['jobGroup']}</div>
-        <div>지원이 성공적으로 완료되었습니다.</div>
+        <div id='first'>{router.query['name']}, {router.query['jobGroup']}</div>
+        <div>Your application has been successfully completed.</div>
       </S.Title>
       <S.SubTitle>
-        저희 오늘하루 팀과 함께 일하는 그날을 기대하겠습니다 :)
+        We look forward to working with our team today :)
       </S.SubTitle>
-      <S.MainButton onClick={() => {router.push('/recruitment')}}>채용 화면으로 돌아가기</S.MainButton>
+      <S.MainButton onClick={() => {router.push('/recruitment')}}>Back to Recruitment Screen</S.MainButton>
     </S.SuccessForm>
   );
 };

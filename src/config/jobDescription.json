@@ -3,57 +3,57 @@
     {
       "id": "1",
       "jobGroup": "Android Developer",
-      "number": "7기 신입생",
-      "deadLine": "상시채용",
+      "number": "7th Freshman",
+      "deadLine": "always",
       "innerImage": "",
-      "text1": "1. 새로운 안드로이드 앱 개발 업무에 참여합니다.\n2. 기존 서비스인 '나를 기록하다, 오늘하루'의 유지보수에 참여합니다.",
-      "text2": "안드로이드 앱 개발에 관심이 많은 학생\n자바 혹은 코틀린 언어의 경험이 있는 학생",
-      "text3": "서류 접수 > 사전 과제 > 면접 > 합격 여부 확인",
-      "text4": "비록 처음은 힘들지라도 노력하고 열심히 한다면 실력과 경험은 뒤따라 올 것입니다. 저도 그렇게 성장하였으니 열심히 노력한다면 여러분들도 할 수 있으실겁니다."
+      "text1": "1. Participate in the development of new Android apps.\n2. Participate in themaintenance of the existing service 'Record Me, Today's Day'.",
+      "text2": "Students interested in Android app development\nStudents with experience in Java or Kotlin languages",
+      "text3": "Submission of documents > Preliminary assignments > Interview > Confirmation of acceptance",
+      "text4": "Although it may be difficult at first, if you work hard and work hard, your skills and experience will follow. I grew up like that, so if you work hard, you can do it too."
     },
     {
       "id": "2",
       "jobGroup": "iOS Developer",
-      "number": "7기 신입생",
-      "deadLine": "상시채용",
+      "number": "7th Freshman",
+      "deadLine": "always",
       "innerImage": "",
-      "text1": "1. 새로운 iOS 앱 개발 업무에 참여합니다.\n2. 기존 서비스인 '나를 기록하다, 오늘하루'의 유지보수에 참여합니다.",
-      "text2": "개발의 흥미가 있는 학생\n포기하지 않는 끈기가 있는 학생",
-      "text3": "서류 접수 > 사전 과제 > 면접 > 합격 여부 확인",
-      "text4": "iOS를 한다는 것은 힘들고 외로운 길입니다. 그렇기에 많은 노력이 필요하고, 포기하지 않는 끈기가 중요합니다. 처음부터 잘하는 사람이 아닌, 성실함을 평가하여 채용할 예정이니 참고 바랍니다."
+      "text1": "1. Participate in the development of new iOS apps.\n2. Participate in the maintenance of the existing service, 'Record Me, Today'.",
+      "text2": "Students interested in development\nA student who is persistent and does not give up",
+      "text3": "Submission of documents > Preliminary assignments > Interview > Confirmation of acceptance",
+      "text4": "Doing iOS is a hard and lonely road. Therefore, it takes a lot of effort, and persistence not to give up is important. Please note that we plan to hire people based on their sincerity, not those who are good at it from the start."
     },
     {
       "id": "3",
       "jobGroup": "Front-End Developer",
-      "number": "7기 신입생",
-      "deadLine": "상시채용",
+      "number": "7th Freshman",
+      "deadLine": "always",
       "innerImage": "",
-      "text1": "1. 새로운 Front-End 개발 업무에 참여합니다.\n2. 기존 서비스인 '나를 기록하다, 오늘하루' 웹의 유지보수 및 기능 추가 업무에 참여합니다.",
-      "text2": "JavaScript에 대해서 어느정도 이해가 있는 학생\n웹 개발 및 React 개발에 관심이 있는 학생",
-      "text3": "서류 접수 > 사전 과제 > 면접 > 합격 여부 확인",
-      "text4": "아직 누군가를 가르칠 만큼 실력이 좋다고 생각하지 않지만 모르는게 있으면 최대한 도와드리겠습니다."
+      "text1": "1. Participate in new Front-End development work.\n2. Participate in web maintenance and function addition of the existing service 'Record Me, Today'.",
+      "text2": "Students with some understanding of JavaScript\nStudents interested in web development and React development",
+      "text3": "Submission of documents > Preliminary assignments > Interview > Confirmation of acceptance",
+      "text4": "I don't think I'm good enough to teach anyone yet, but if there's something you don't know, I'll do my best to help."
     },
     {
       "id": "4",
       "jobGroup": "Back-End Developer",
-      "number": "7기 신입생",
-      "deadLine": "상시채용",
+      "number": "7th Freshman",
+      "deadLine": "always",
       "innerImage": "",
-      "text1": "1. 새로운 프로젝트의 서버 개발 업무에 참여합니다.\n2. 기존 서비스인 '나를 기록하다, 오늘하루'의 유지보수에 참여합니다.\n3. 데이터베이스 관리, AWS 클라우드 컴퓨팅 환경 관리에 대해 배웁니다.",
-      "text2": "Go 언어를 들어본 적 있거나 관심이 있는 학생\n서버, 데이터 베이스에 관심이 있는 학생",
-      "text3": "서류 접수 > 사전 과제 > 면접 > 합격 여부 확인",
-      "text4": "실제 서비스를 했던 경험이 있는 것은 백엔드 포지션 구직에서 아주 큰 점수가 됩니다. 그런 차원에서 저희 동아리는 좋은 경험을 쌓을 수 있습니다. 많은 지원 부탁드립니다."
+      "text1": "1. Participate in server development for a new project.\n2. Participate in the maintenance of the existing service 'Record Me, Today'.\n3. Learn about database management, AWS cloud computing environment management.",
+      "text2": "Students who have heard of or are interested in Go language\nStudents interested in servers and databases",
+      "text3": "Submission of documents > Preliminary assignments > Interview > Confirmation of acceptance",
+      "text4": "Having experience in real service is a very big score in finding a backend position. In that sense, our club can build up good experiences. Thank you for your support."
     },
     {
       "id": "5",
       "jobGroup": "UI/UX Designer",
-      "number": "7기 신입생",
-      "deadLine": "상시채용",
+      "number": "7th Freshman",
+      "deadLine": "always",
       "innerImage": "/image/jobGroup/InnerImage.svg",
-      "text1": "UX(User eXperience)는 사용자 경험을 의미합니다.\nUI/UX 디자이너는 사용자 중심으로 생각하며, 사용자 친화적인 디자인을 하는 역할을 합니다.\n기획 단계부터 개발까지 모든 단계에 참여하며, 프로덕트 개발에 큰 비중을 차지합니다.\n1. 기존 서비스인 '나를 기록하다, 오늘하루'의 리디자인 업무에 참여합니다.\n2. UX 방법론에 따라 리서치/User Flow 제작/와이어프레임 제작/프로토타입 제작/UI 디자인 등의 업무에 참여합니다.\n3. 프로젝트에 필요한 아이콘 등을 제작하며, 최종적으로 디자인 시스템을 제작합니다.",
-      "text2": "디자인 툴을 다뤄본 경험이 있으신 분 [ex|Photoshop, Illustrator, Figma, Adobe XD 등]\n이유 있는 디자인의 필요성을 인지 하고 있으신 분",
-      "text3": "서류 접수 > 사전 과제(디자인 과제) > 면접 > 최종 합격",
-      "text4": "프로젝트에서 디자인은 생각보다 훨씬 큰 비중을 차지하고 있습니다. 오늘하루팀에서 UX/UI 디자이너로서 참여하여 사용자를 위한 디자인을 해본다면 좋은 경험이 될 것 입니다."
+      "text1": "UX (User eXperience) means user experience.\nUI/UX designers think user-centered and play a role in user-friendly design.\nParticipate in all stages from planning to development, and participate in product development. It plays a big role.\n1. Participate in the redesign of the existing service 'Record Me, Today'.\n2. According to the UX methodology, I participate in research/user flow production/wireframe production/prototyping/UI design.\n3. We produce icons, etc. necessary for the project, and finally produce a design system.",
+      "text2": "Those who have experience with design tools [ex|Photoshop, Illustrator, Figma, Adobe XD, etc.]\nThose who are aware of the need for design with a reason",
+      "text3": "Submission of documents > Preliminary assignments > Interview > Confirmation of acceptance",
+      "text4": "In a project, design plays a much larger role than you might think. It will be a good experience if you participate as a UX/UI designer in Today's Haru team and design for users."
     }
   ]
 }

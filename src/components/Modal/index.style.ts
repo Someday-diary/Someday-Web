@@ -24,7 +24,7 @@ export const Text = styled.div`
 export const CancelButton = styled.button`
   font-family: pretendard600;
   font-size: 16px;
-  margin-top: 15px;
+  /* margin-top: 15px; */
   margin-left: 250px;
   width: 88px;
   height: 51px;
@@ -42,7 +42,7 @@ export const CancelButton = styled.button`
 export const SubmitButton = styled.button`
   font-family: pretendard600;
   font-size: 16px;
-  margin-top: 15px;
+  /* margin-top: 15px; */
   margin-left: 10px;
   width: 88px;
   height: 51px;

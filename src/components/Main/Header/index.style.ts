@@ -20,11 +20,11 @@ export const HeaderItem = styled.span`
   float: right;
   line-height: 60px;
   margin-left: 50px;
-  font-family: ${props => props.color ? 'AppleSDGothicBold' : 'AppleSDGothicMedium'};
+  font-family: ${props => props.color ? 'Pretendard500' : 'Pretendard500'};
   font-size: 15px;
 
   &:hover {
-    font-family: AppleSDGothicBold;
+    font-family: Pretendard700;
     cursor: pointer;
   }
 `;

@@ -27,21 +27,21 @@ const CustomModal = (props: any) => {
         overflow: 'hidden'
       }
     }}>
-      <S.ModalTitle>{title} 지원서</S.ModalTitle>
+      <S.ModalTitle>{title} application</S.ModalTitle>
       <S.ModalText>
-        <div>학번: {number.replace(/[^0-9]/g, '')}</div>
-        <div>이름: {name}</div>
-        <div>전화번호: {phoneNumber.replace(/[^0-9]/g, '').replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, '$1-$2-$3')}</div>
-        <div>이메일: {email}</div>
+        <div>class number: {number.replace(/[^0-9]/g, '')}</div>
+        <div>name: {name}</div>
+        <div>phone number: {phoneNumber.replace(/[^0-9]/g, '').replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, '$1-$2-$3')}</div>
+        <div>e-mail: {email}</div>
       </S.ModalText>
       <S.Text>
-        *입력된 이메일을 통해, 사전과제 및 합격 여부를 전송해드립니다.<br />
-        *제출하시면, 지원 내역을 수정할 수 없습니다.
+        *We will send you the pre-assignment and whether or not you passed through the entered email.<br />
+        *Once submitted, your application details cannot be edited.
       </S.Text>
-      <S.CancelButton onClick={() => {props.setModalIsOpen(false)}}>뒤로가기</S.CancelButton>
+      <S.CancelButton onClick={() => {props.setModalIsOpen(false)}}>go back</S.CancelButton>
       <S.SubmitButton onClick={() => {
         props.onClick();  
-      }}>제출하기</S.SubmitButton>
+      }}>submit</S.SubmitButton>
     </ReactModal>
   );
 };

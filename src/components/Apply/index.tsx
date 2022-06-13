@@ -101,10 +101,10 @@ const ApplyForm = () => {
   return (
     <>
       <S.ApplyLayout>
-        <S.Title>{router.query['jobGroup']} 지원서</S.Title>
+        <S.Title>{router.query['jobGroup']} application</S.Title>
         <S.Content onSubmit={onSubmit}>
           <InputBox 
-            text="학번" 
+            text="class number" 
             type="text" 
             onClick={onClickNumberEvent} 
             onChange={onChangeNumber} 
@@ -113,38 +113,39 @@ const ApplyForm = () => {
             maxLength={4}
           />
           <S.Message>
-            <div>*학번은 학년, 반, 번호 순서대로 기입합니다.</div>
-            <div>*번호가 한자리수일 경우에 앞에 0을 기입후 번호를 기입합니다.</div>
-            <div>ex) 1학년 2반 5번 일 경우 &gt; 1205</div>
+            <div>*The student number is written in the order of grade, class, and number.</div>
+            <div>*If the number is a single digit, enter the number after putting a leading 0.</div>
+            <div>ex) if 1st year, 2nd class, 5th &gt; 1205</div>
           </S.Message>
           {
             countNumber === 0 || number.length === 4 ? (
               <></>
             ) : (
-              <ErrorMessage text='*학번을 입력해주세요' />
+              <ErrorMessage text='*Please enter your class number' />
             )
           }
           <InputBox 
-            text="이름" 
+            text="name" 
             onChange={onChangeName} 
-            value={name.replace(/[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g, '')} 
+            // value={name.replace(/[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g, '')} 
             onClick={onClickNameEvent} 
             setter={setNameText} 
             type="text" 
+            style="ime-mode:active;"
           />
-          <S.Message>
+          {/* <S.Message>
             <div>*한글만 입력이 가능합니다.</div>
             <div>*글자가 입력되지 않는다면 한/영키를 확인해주세요.</div>
-          </S.Message>
+          </S.Message> */}
           {
             countName === 0 || name.length !== 0 ? (
               <></>
             ) : (
-              <ErrorMessage text='*이름을 입력해주세요' />
+              <ErrorMessage text='*Please enter your name' />
             )
           }
           <InputBox 
-            text="전화번호" 
+            text="phone number" 
             onChange={onChangePhoneNumber} 
             value={phoneNumber.replace(/[^0-9]/g, '').replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, '$1-$2-$3')} 
             onClick={onClickPhoneNumberEvent} 
@@ -156,11 +157,11 @@ const ApplyForm = () => {
             countPhoneNumber === 0 || phoneNumber.length > 12 ? (
               <></>
             ) : (
-              <ErrorMessage text='*전화번호을 입력해주세요' />
+              <ErrorMessage text='*Please enter your phone number' />
             )
           }
           <InputBox 
-            text="이메일" 
+            text="e-mail" 
             onChange={onChangeEmail} 
             value={email} 
             onClick={onClickEmailEvent} 
@@ -172,14 +173,14 @@ const ApplyForm = () => {
             countEmail === 0 || email.length !== 0 ? (
               <ErrorMessage text='' />
             ) : (
-              <ErrorMessage text='*이메일을 입력해주세요' />
+              <ErrorMessage text='*Please enter your e-mail' />
             )
           }
           {
             number.length !== 0 && name.length !== 0 && phoneNumber.length !== 0 && email.length !== 0 ? (
-              <S.SubmitButton type='submit'>제출 하기</S.SubmitButton>
+              <S.SubmitButton type='submit'>Submit</S.SubmitButton>
             ) : (
-              <S.SubmitButton disabled>제출 하기</S.SubmitButton>
+              <S.SubmitButton disabled>Submit</S.SubmitButton>
             )
           }
           <Toaster position="bottom-center" toastOptions={{

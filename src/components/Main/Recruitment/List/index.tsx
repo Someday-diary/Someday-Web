@@ -35,9 +35,9 @@ const RecruitmentList = () => {
     <>
       <S.ListTitle>
         <table>
-          <td id='first'>직군</td>
-          <td id='second'>기수</td>
-          <td id='third'>마감일자</td>
+          <td id='first'>Job Group</td>
+          <td id='second'>th</td>
+          <td id='third'>Deadline</td>
         </table>
       </S.ListTitle>
 

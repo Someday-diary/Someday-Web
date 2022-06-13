@@ -79,7 +79,7 @@ const RecruitmentDetail = () => {
               />
               <S.Container>
                 <S.MainTitle>{jobDescription.jobDescription[idx-1]?.jobGroup}</S.MainTitle>
-                <S.Title>팀원으로서 하게 될 업무</S.Title>
+                <S.Title>What you will do as a team member</S.Title>
                 <S.Text>
                   {
                     jobDescription.jobDescription[idx-1]?.text1.split('\n').map(
@@ -102,7 +102,7 @@ const RecruitmentDetail = () => {
                     </S.InnerImage>
                   )
                 }
-                <S.Title>우대사항</S.Title>
+                <S.Title>Preferential treatment</S.Title>
                 <S.Text>
                   {
                     jobDescription.jobDescription[idx-1]?.text2.split('\n').map(
@@ -112,11 +112,11 @@ const RecruitmentDetail = () => {
                     )
                   }
                 </S.Text>
-                <S.Title>채용과정</S.Title>
+                <S.Title>Recruitment process</S.Title>
                 <S.Text>
                   {jobDescription.jobDescription[idx-1]?.text3}
                 </S.Text>
-                <S.Title>선배의 한마디</S.Title>
+                <S.Title>A word from a senior</S.Title>
                 <S.TextForm>
                   {
                     jobDescription.jobDescription[idx-1]?.text4?.split('\n').map(
@@ -129,19 +129,19 @@ const RecruitmentDetail = () => {
                 <S.Line />
                 <S.Form>
                   <table>
-                    <td id='title'>직군</td>
+                    <td id='title'>Job Group</td>
                     <td>{jobDescription.jobDescription[idx-1]?.jobGroup}</td>
                   </table>
                 </S.Form>
                 <S.Form>
                   <table>
-                    <td id='title'>기수</td>
+                    <td id='title'>th</td>
                     <td>{jobDescription.jobDescription[idx-1]?.number}</td>
                   </table>
                 </S.Form>
                 <S.Form>
                   <table>
-                    <td id='title'>마감일자</td>
+                    <td id='title'>Daedline</td>
                     <td>{jobDescription.jobDescription[idx-1]?.deadLine}</td>
                   </table>
                 </S.Form>
@@ -151,14 +151,14 @@ const RecruitmentDetail = () => {
                       router.push(`/apply?jobGroup=${jobDescription.jobDescription[idx-1]?.jobGroup}&recruit=${idx}`)
                     }}
                   >
-                    지원하기
+                    Apply
                   </S.SubmitButton>
                   <S.QuestionButton 
                     onClick={() => {
                       window.open('https://open.kakao.com/o/szJTIe3d');
                     }}
                   >
-                    질문하기
+                    Ask
                   </S.QuestionButton>
                 </S.ButtonForm>
               </S.Container>
